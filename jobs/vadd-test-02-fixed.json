@@ -1,0 +1,18 @@
+{
+  "input": {
+    "a": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "b": [
+      10,
+      20,
+      30,
+      40
+    ],
+    "engine": "cuda",
+    "_script": "using CUDA\nusing JACC\nusing JSON3\n\n\"\"\"\nMinimal test kernel: element-wise vector addition on the GPU, with two\ninterchangeable implementations selected via the \"engine\" input field.\n\nInput JSON (argv[1]):\n    {\"a\": [1,2,3], \"b\": [10,20,30], \"engine\": \"cuda\"}   # or \"jacc\" (default: \"cuda\")\nOutput JSON (stdout):\n    {\"result\": [11,22,33], \"device\": \"<GPU name>\", \"engine\": \"cuda\"}\n\nThis exists purely to validate the pipeline end-to-end (container ->\nRunPod scheduler -> GPU worker -> Julia -> CUDA.jl/JACC.jl -> result back).\nSwap the kernel body out once the plumbing is confirmed working.\n\"\"\"\n\n\n# --- Raw CUDA.jl kernel (vendor-specific, lowest-level control) ---\nfunction vadd_kernel!(y, a, b)\n    i = (blockIdx().x - 1) * blockDim().x + threadIdx().x\n    if i <= length(y)\n        @inbounds y[i] = a[i] + b[i]\n    end\n    return nothing\nend\n\nfunction run_cuda(a_host, b_host)\n    n = length(a_host)\n    a_dev = CuArray(a_host)\n    b_dev = CuArray(b_host)\n    y_dev = CUDA.zeros(Float32, n)\n\n    threads = 256\n    blocks = cld(n, threads)\n    @cuda threads=threads blocks=blocks vadd_kernel!(y_dev, a_dev, b_dev)\n    CUDA.synchronize()\n\n    return Array(y_dev)\nend\n\n# --- JACC.jl kernel (portable across CUDA/AMDGPU/oneAPI/Metal/threads,\n#     backend chosen at image-build time via JACC.set_backend) ---\nfunction vadd_kernel_jacc!(i, y, a, b)\n    @inbounds y[i] = a[i] + b[i]\nend\n\nfunction run_jacc(a_host, b_host)\n    n = length(a_host)\n    a_dev = JACC.array(a_host)\n    b_dev = JACC.array(b_host)\n    y_dev = JACC.zeros(Float32, n)\n\n    JACC.@parallel_for range=n vadd_kernel_jacc!(y_dev, a_dev, b_dev)\n\n    return Array(y_dev)\nend\n\nfunction main()\n    if length(ARGS) < 1\n        println(stderr, \"Usage: julia kernel.jl '<json input>'\")\n        exit(1)\n    end\n\n    input = JSON3.read(ARGS[1])\n    a_host = Float32.(input.a)\n    b_host = Float32.(input.b)\n    engine = haskey(input, :engine) ? String(input.engine) : \"cuda\"\n\n    if !CUDA.functional()\n        println(JSON3.write(Dict(\"error\" => \"CUDA is not functional on this worker (no GPU visible or driver issue)\")))\n        exit(1)\n    end\n\n    y_host = engine == \"jacc\" ? run_jacc(a_host, b_host) : run_cuda(a_host, b_host)\n    dev_name = CUDA.name(CUDA.device())\n\n    println(JSON3.write(Dict(\"result\" => y_host, \"device\" => dev_name, \"engine\" => engine)))\nend\n\nmain()"
+  }
+}
