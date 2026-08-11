@@ -1,0 +1,80 @@
+name: Submit RunPod Job
+
+# Triggers ONLY on pushes that touch jobs/**. The RunPod worker pushes its
+# results to results/**, and this workflow's own submission-confirmation
+# commit goes to submissions/** — neither of those paths match this filter,
+# so this cannot retrigger itself in a loop.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "jobs/**"
+
+permissions:
+  contents: write
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Find changed job file(s)
+        id: changed
+        run: |
+          BEFORE="${{ github.event.before }}"
+          if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+            BEFORE=$(git rev-parse HEAD~1 2>/dev/null || echo "")
+          fi
+          if [ -n "$BEFORE" ]; then
+            FILES=$(git diff --name-only "$BEFORE" "${{ github.sha }}" -- 'jobs/*.json')
+          else
+            FILES=$(git show --name-only --pretty=format: HEAD -- 'jobs/*.json')
+          fi
+          echo "Changed job files:"
+          echo "$FILES"
+          {
+            echo "files<<EOF"
+            echo "$FILES"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Submit each job to RunPod
+        env:
+          RUNPOD_ENDPOINT_ID: ${{ secrets.RUNPOD_ENDPOINT_ID }}
+          RUNPOD_API_KEY: ${{ secrets.RUNPOD_API_KEY }}
+        run: |
+          mkdir -p submissions
+          FILES="${{ steps.changed.outputs.files }}"
+          if [ -z "$FILES" ]; then
+            echo "No jobs/*.json files changed in this push; nothing to submit."
+            exit 0
+          fi
+          for f in $FILES; do
+            [ -f "$f" ] || continue
+            echo "Submitting $f ..."
+            RESPONSE=$(curl -s -X POST "https://api.runpod.ai/v2/${RUNPOD_ENDPOINT_ID}/run" \
+              -H "Authorization: Bearer ${RUNPOD_API_KEY}" \
+              -H "Content-Type: application/json" \
+              -d @"$f")
+            echo "Response: $RESPONSE"
+            BASENAME=$(basename "$f" .json)
+            OUT="submissions/${BASENAME}.submission.json"
+            printf '%s\n' "$RESPONSE" > "$OUT"
+            echo "$OUT" >> /tmp/submission_outputs.txt
+          done
+
+      - name: Commit submission responses
+        run: |
+          git config user.email "actions-runpod-submit@example.com"
+          git config user.name "runpod-submit-bot"
+          git add submissions/ || true
+          if git diff --cached --quiet; then
+            echo "No submission files to commit."
+          else
+            git commit -m "Record RunPod submission response(s) for ${{ github.sha }}"
+            git push origin HEAD:main
+          fi
