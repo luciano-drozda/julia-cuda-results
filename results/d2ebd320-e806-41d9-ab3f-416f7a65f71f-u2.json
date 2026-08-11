@@ -1,0 +1,5 @@
+{
+  "error": "julia process exited non-zero",
+  "returncode": 1,
+  "stderr": "[ Info: Using JACC backend: cuda\n[ Info: Using JACC backend: cuda\nERROR: LoadError: UndefVarError: `@parallel_for` not defined\nin expression starting at /tmp/job_d2ebd320-e806-41d9-ab3f-416f7a65f71f-u2.jl:55\nin expression starting at /tmp/job_d2ebd320-e806-41d9-ab3f-416f7a65f71f-u2.jl:49\n"
+}
