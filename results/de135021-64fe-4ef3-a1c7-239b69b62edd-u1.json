@@ -1,0 +1,10 @@
+{
+  "engine": "cuda-only",
+  "device": "NVIDIA RTX A5000",
+  "result": [
+    11.0,
+    22.0,
+    33.0,
+    44.0
+  ]
+}
