@@ -1,5 +1,0 @@
-{
-  "error": "julia process exited non-zero",
-  "returncode": 1,
-  "stderr": "[ Info: Using JACC backend: cuda\n[ Info: Using JACC backend: cuda\nERROR: LoadError: UndefVarError: `@init_backend` not defined\nin expression starting at /app/kernel.jl:19\nin expression starting at /app/kernel.jl:19\n"
-}
