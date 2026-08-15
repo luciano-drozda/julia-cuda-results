@@ -1,0 +1,5 @@
+{
+  "error": "julia process exited non-zero",
+  "returncode": 1,
+  "stderr": "Precompiling CUDAExt...\n   4276.9 ms  \u2713 JACC \u2192 CUDAExt\n  1 dependency successfully precompiled in 5 seconds. 125 already precompiled.\n[ Info: CUDA backend loaded\nERROR: LoadError: KeyError: key :a not found\nStacktrace:\n [1] getindex(h::Dict{Symbol, Int64}, key::Symbol)\n   @ Base ./dict.jl:477\n [2] get(obj::JSON3.Object{Base.CodeUnits{UInt8, String}, Vector{UInt64}}, key::Symbol)\n   @ JSON3 /opt/julia-depot/packages/JSON3/rT1w2/src/JSON3.jl:87\n [3] getproperty(obj::JSON3.Object{Base.CodeUnits{UInt8, String}, Vector{UInt64}}, prop::Symbol)\n   @ JSON3 /opt/julia-depot/packages/JSON3/rT1w2/src/JSON3.jl:127\n [4] main()\n   @ Main /app/kernel.jl:78\n [5] top-level scope\n   @ /app/kernel.jl:93\nin expression starting at /app/kernel.jl:93\n"
+}
