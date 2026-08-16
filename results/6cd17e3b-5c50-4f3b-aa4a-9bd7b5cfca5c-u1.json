@@ -1,0 +1,244 @@
+{
+  "results": [
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "branchsel",
+      "mode": "tangent",
+      "max_rel_err": null,
+      "errmsg": "Scalar indexing is disallowed. | Invocation of setindex! resulted in scalar indexing of a GPU array. | This is typically caused by calling an iterating implementation of a method. | Such implementations *do not* execute on the GPU, but very slowly on the CPU, | and therefore should be avoided. |  | If you want to allow scalar iteration, use `allowscalar` or `@allowscalar` | to enable scalar iteration globally or for the operations in question."
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "branchsel",
+      "mode": "adjoint",
+      "max_rel_err": null,
+      "errmsg": "Scalar indexing is disallowed. | Invocation of setindex! resulted in scalar indexing of a GPU array. | This is typically caused by calling an iterating implementation of a method. | Such implementations *do not* execute on the GPU, but very slowly on the CPU, | and therefore should be avoided. |  | If you want to allow scalar iteration, use `allowscalar` or `@allowscalar` | to enable scalar iteration globally or for the operations in question."
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "branchsel",
+      "mode": "hvp",
+      "max_rel_err": null,
+      "errmsg": "adjoint initstacks unavailable (adjoint gen/run failed earlier)"
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "branchsel",
+      "mode": "tangent",
+      "max_rel_err": null,
+      "errmsg": "Scalar indexing is disallowed. | Invocation of setindex! resulted in scalar indexing of a GPU array. | This is typically caused by calling an iterating implementation of a method. | Such implementations *do not* execute on the GPU, but very slowly on the CPU, | and therefore should be avoided. |  | If you want to allow scalar iteration, use `allowscalar` or `@allowscalar` | to enable scalar iteration globally or for the operations in question."
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "branchsel",
+      "mode": "adjoint",
+      "max_rel_err": null,
+      "errmsg": "Scalar indexing is disallowed. | Invocation of setindex! resulted in scalar indexing of a GPU array. | This is typically caused by calling an iterating implementation of a method. | Such implementations *do not* execute on the GPU, but very slowly on the CPU, | and therefore should be avoided. |  | If you want to allow scalar iteration, use `allowscalar` or `@allowscalar` | to enable scalar iteration globally or for the operations in question."
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "branchsel",
+      "mode": "hvp",
+      "max_rel_err": null,
+      "errmsg": "adjoint initstacks unavailable (adjoint gen/run failed earlier)"
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "dotprod",
+      "mode": "tangent",
+      "max_rel_err": null,
+      "errmsg": "Scalar indexing is disallowed. | Invocation of getindex resulted in scalar indexing of a GPU array. | This is typically caused by calling an iterating implementation of a method. | Such implementations *do not* execute on the GPU, but very slowly on the CPU, | and therefore should be avoided. |  | If you want to allow scalar iteration, use `allowscalar` or `@allowscalar` | to enable scalar iteration globally or for the operations in question."
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "dotprod",
+      "mode": "adjoint",
+      "max_rel_err": null,
+      "errmsg": "Scalar indexing is disallowed. | Invocation of getindex resulted in scalar indexing of a GPU array. | This is typically caused by calling an iterating implementation of a method. | Such implementations *do not* execute on the GPU, but very slowly on the CPU, | and therefore should be avoided. |  | If you want to allow scalar iteration, use `allowscalar` or `@allowscalar` | to enable scalar iteration globally or for the operations in question."
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "dotprod",
+      "mode": "hvp",
+      "max_rel_err": null,
+      "errmsg": "adjoint initstacks unavailable (adjoint gen/run failed earlier)"
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "dotprod",
+      "mode": "tangent",
+      "max_rel_err": null,
+      "errmsg": "Scalar indexing is disallowed. | Invocation of getindex resulted in scalar indexing of a GPU array. | This is typically caused by calling an iterating implementation of a method. | Such implementations *do not* execute on the GPU, but very slowly on the CPU, | and therefore should be avoided. |  | If you want to allow scalar iteration, use `allowscalar` or `@allowscalar` | to enable scalar iteration globally or for the operations in question."
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "dotprod",
+      "mode": "adjoint",
+      "max_rel_err": null,
+      "errmsg": "Scalar indexing is disallowed. | Invocation of getindex resulted in scalar indexing of a GPU array. | This is typically caused by calling an iterating implementation of a method. | Such implementations *do not* execute on the GPU, but very slowly on the CPU, | and therefore should be avoided. |  | If you want to allow scalar iteration, use `allowscalar` or `@allowscalar` | to enable scalar iteration globally or for the operations in question."
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "dotprod",
+      "mode": "hvp",
+      "max_rel_err": null,
+      "errmsg": "adjoint initstacks unavailable (adjoint gen/run failed earlier)"
+    },
+    {
+      "backend": "cuda",
+      "status": "gen_error",
+      "kernel": "mpnn",
+      "mode": "tangent",
+      "max_rel_err": null,
+      "errmsg": "cgen_device_assign: write to `msg_inputd[zero_off + k]` inside a GPU-split loop has an index that doesn't depend on the loop's own thread variable (`e`), even transitively through same-body scalar let-bindings, and isn't an additive accumulation -- this is a data race across threads, not something an atomic wrapper can fix. See skill-stade.md's cgen_device_assign hardening note."
+    },
+    {
+      "backend": "cuda",
+      "status": "gen_error",
+      "kernel": "mpnn",
+      "mode": "adjoint",
+      "max_rel_err": null,
+      "errmsg": "cgen_device_assign: write to `msg_input[zero_off + k]` inside a GPU-split loop has an index that doesn't depend on the loop's own thread variable (`e`), even transitively through same-body scalar let-bindings, and isn't an additive accumulation -- this is a data race across threads, not something an atomic wrapper can fix. See skill-stade.md's cgen_device_assign hardening note."
+    },
+    {
+      "backend": "cuda",
+      "status": "gen_error",
+      "kernel": "mpnn",
+      "mode": "hvp",
+      "max_rel_err": null,
+      "errmsg": "cgen_device_assign: write to `msg_inputd[zero_off + k]` inside a GPU-split loop has an index that doesn't depend on the loop's own thread variable (`e`), even transitively through same-body scalar let-bindings, and isn't an additive accumulation -- this is a data race across threads, not something an atomic wrapper can fix. See skill-stade.md's cgen_device_assign hardening note."
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "mpnn",
+      "mode": "tangent",
+      "max_rel_err": null,
+      "errmsg": "Scalar indexing is disallowed. | Invocation of getindex resulted in scalar indexing of a GPU array. | This is typically caused by calling an iterating implementation of a method. | Such implementations *do not* execute on the GPU, but very slowly on the CPU, | and therefore should be avoided. |  | If you want to allow scalar iteration, use `allowscalar` or `@allowscalar` | to enable scalar iteration globally or for the operations in question."
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "mpnn",
+      "mode": "adjoint",
+      "max_rel_err": null,
+      "errmsg": "Scalar indexing is disallowed. | Invocation of getindex resulted in scalar indexing of a GPU array. | This is typically caused by calling an iterating implementation of a method. | Such implementations *do not* execute on the GPU, but very slowly on the CPU, | and therefore should be avoided. |  | If you want to allow scalar iteration, use `allowscalar` or `@allowscalar` | to enable scalar iteration globally or for the operations in question."
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "mpnn",
+      "mode": "hvp",
+      "max_rel_err": null,
+      "errmsg": "adjoint initstacks unavailable (adjoint gen/run failed earlier)"
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "quadloss",
+      "mode": "tangent",
+      "max_rel_err": null,
+      "errmsg": "Scalar indexing is disallowed. | Invocation of setindex! resulted in scalar indexing of a GPU array. | This is typically caused by calling an iterating implementation of a method. | Such implementations *do not* execute on the GPU, but very slowly on the CPU, | and therefore should be avoided. |  | If you want to allow scalar iteration, use `allowscalar` or `@allowscalar` | to enable scalar iteration globally or for the operations in question."
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "quadloss",
+      "mode": "adjoint",
+      "max_rel_err": null,
+      "errmsg": "Scalar indexing is disallowed. | Invocation of setindex! resulted in scalar indexing of a GPU array. | This is typically caused by calling an iterating implementation of a method. | Such implementations *do not* execute on the GPU, but very slowly on the CPU, | and therefore should be avoided. |  | If you want to allow scalar iteration, use `allowscalar` or `@allowscalar` | to enable scalar iteration globally or for the operations in question."
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "quadloss",
+      "mode": "hvp",
+      "max_rel_err": null,
+      "errmsg": "adjoint initstacks unavailable (adjoint gen/run failed earlier)"
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "quadloss",
+      "mode": "tangent",
+      "max_rel_err": null,
+      "errmsg": "Scalar indexing is disallowed. | Invocation of setindex! resulted in scalar indexing of a GPU array. | This is typically caused by calling an iterating implementation of a method. | Such implementations *do not* execute on the GPU, but very slowly on the CPU, | and therefore should be avoided. |  | If you want to allow scalar iteration, use `allowscalar` or `@allowscalar` | to enable scalar iteration globally or for the operations in question."
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "quadloss",
+      "mode": "adjoint",
+      "max_rel_err": null,
+      "errmsg": "Scalar indexing is disallowed. | Invocation of setindex! resulted in scalar indexing of a GPU array. | This is typically caused by calling an iterating implementation of a method. | Such implementations *do not* execute on the GPU, but very slowly on the CPU, | and therefore should be avoided. |  | If you want to allow scalar iteration, use `allowscalar` or `@allowscalar` | to enable scalar iteration globally or for the operations in question."
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "quadloss",
+      "mode": "hvp",
+      "max_rel_err": null,
+      "errmsg": "adjoint initstacks unavailable (adjoint gen/run failed earlier)"
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "unet",
+      "mode": "tangent",
+      "max_rel_err": null,
+      "errmsg": "MethodError: no method matching size(::CuArray{Float64, 1, CUDACore.DeviceMemory}) | The function `size` exists, but no method is defined for this combination of argument types. | You may need to implement the `length` and `size` methods for `IteratorSize` `HasShape`. |  | Closest candidates are: |   size(::AbstractArray{T, N}, !Matched::Any) where {T, N} |    @ Base abstractarray.jl:42 |   size(::CuArray) (method too new to be called from this world context.) |    @ CUDACore /opt/julia-depot/pa...[truncated]"
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "unet",
+      "mode": "adjoint",
+      "max_rel_err": null,
+      "errmsg": "KeyError: key :hw2 not found"
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "unet",
+      "mode": "hvp",
+      "max_rel_err": null,
+      "errmsg": "adjoint initstacks unavailable (adjoint gen/run failed earlier)"
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "unet",
+      "mode": "tangent",
+      "max_rel_err": null,
+      "errmsg": "MethodError: no method matching size(::CuArray{Float64, 1, CUDACore.DeviceMemory}) | The function `size` exists, but no method is defined for this combination of argument types. | You may need to implement the `length` and `size` methods for `IteratorSize` `HasShape`. |  | Closest candidates are: |   size(::AbstractArray{T, N}, !Matched::Any) where {T, N} |    @ Base abstractarray.jl:42 |   size(::CuArray) (method too new to be called from this world context.) |    @ CUDACore /opt/julia-depot/pa...[truncated]"
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "unet",
+      "mode": "adjoint",
+      "max_rel_err": null,
+      "errmsg": "KeyError: key :hw2 not found"
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "unet",
+      "mode": "hvp",
+      "max_rel_err": null,
+      "errmsg": "adjoint initstacks unavailable (adjoint gen/run failed earlier)"
+    }
+  ]
+}
