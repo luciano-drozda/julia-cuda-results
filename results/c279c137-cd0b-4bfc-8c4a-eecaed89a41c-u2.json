@@ -1,0 +1,172 @@
+{
+  "results": [
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "advection",
+      "mode": "tangent",
+      "max_rel_err": null
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "advection",
+      "mode": "adjoint",
+      "max_rel_err": null
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "advection",
+      "mode": "hvp",
+      "max_rel_err": null
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "advection",
+      "mode": "tangent",
+      "max_rel_err": null
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "advection",
+      "mode": "adjoint",
+      "max_rel_err": null
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "advection",
+      "mode": "hvp",
+      "max_rel_err": null
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "advection_multi",
+      "mode": "tangent",
+      "max_rel_err": null
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "advection_multi",
+      "mode": "adjoint",
+      "max_rel_err": null
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "advection_multi",
+      "mode": "hvp",
+      "max_rel_err": null
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "advection_multi",
+      "mode": "tangent",
+      "max_rel_err": null
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "advection_multi",
+      "mode": "adjoint",
+      "max_rel_err": null
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "advection_multi",
+      "mode": "hvp",
+      "max_rel_err": null
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "bilinear",
+      "mode": "tangent",
+      "max_rel_err": null
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "bilinear",
+      "mode": "adjoint",
+      "max_rel_err": null
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "bilinear",
+      "mode": "hvp",
+      "max_rel_err": null
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "bilinear",
+      "mode": "tangent",
+      "max_rel_err": null
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "bilinear",
+      "mode": "adjoint",
+      "max_rel_err": null
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "bilinear",
+      "mode": "hvp",
+      "max_rel_err": null
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "branchsel",
+      "mode": "tangent",
+      "max_rel_err": null
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "branchsel",
+      "mode": "adjoint",
+      "max_rel_err": null
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "branchsel",
+      "mode": "hvp",
+      "max_rel_err": null
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "branchsel",
+      "mode": "tangent",
+      "max_rel_err": null
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "branchsel",
+      "mode": "adjoint",
+      "max_rel_err": null
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "branchsel",
+      "mode": "hvp",
+      "max_rel_err": null
+    }
+  ]
+}
