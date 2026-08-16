@@ -1,0 +1,52 @@
+{
+  "results": [
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "bilinear",
+      "mode": "tangent",
+      "max_rel_err": null,
+      "errmsg": "MethodError: no method matching size(::CuArray{Float64, 1, CUDACore.DeviceMemory})\nThe function `size` exists, but no method is defined for this combination of argument types.\nYou may need to implement the `length` and `size` methods for `IteratorSize` `HasShape`.\n\nClosest candidates are:\n  size(::CuArray) (method too new to be called from this world context.)\n   @ CUDACore /opt/julia-depot/packages/CUDACore/NlVPI/src/array.jl:357\n  size(::AbstractArray{T, N}, !Matched::Any) where {T, N}\n   @ Base abstractarray.jl:42\n  size(!Matched::LLVM.PhiIncomingSet) (method too new to be called from this world context.)\n   @ LLVM /opt/julia-depot/packages/LLVM/NqHEz/src/core/instructions.jl:634\n  ...\n"
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "bilinear",
+      "mode": "adjoint",
+      "max_rel_err": null,
+      "errmsg": "Scalar indexing is disallowed.\nInvocation of getindex resulted in scalar indexing of a GPU array.\nThis is typically caused by calling an iterating implementation of a method.\nSuch implementations *do not* execute on the GPU, but very slowly on the CPU,\nand therefore should be avoided.\n\nIf you want to allow scalar iteration, use `allowscalar` or `@allowscalar`\nto enable scalar iteration globally or for the operations in question."
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "bilinear",
+      "mode": "hvp",
+      "max_rel_err": null,
+      "errmsg": "adjoint mode didn't produce usable initstacks (see its own :adjoint result)"
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "bilinear",
+      "mode": "tangent",
+      "max_rel_err": null,
+      "errmsg": "MethodError: no method matching size(::CuArray{Float64, 1, CUDACore.DeviceMemory})\nThe function `size` exists, but no method is defined for this combination of argument types.\nYou may need to implement the `length` and `size` methods for `IteratorSize` `HasShape`.\n\nClosest candidates are:\n  size(::AbstractArray{T, N}, !Matched::Any) where {T, N}\n   @ Base abstractarray.jl:42\n  size(::CuArray) (method too new to be called from this world context.)\n   @ CUDACore /opt/julia-depot/packages/CUDACore/NlVPI/src/array.jl:357\n  size(!Matched::LLVM.PhiIncomingSet) (method too new to be called from this world context.)\n   @ LLVM /opt/julia-depot/packages/LLVM/NqHEz/src/core/instructions.jl:634\n  ...\n"
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "bilinear",
+      "mode": "adjoint",
+      "max_rel_err": null,
+      "errmsg": "Scalar indexing is disallowed.\nInvocation of getindex resulted in scalar indexing of a GPU array.\nThis is typically caused by calling an iterating implementation of a method.\nSuch implementations *do not* execute on the GPU, but very slowly on the CPU,\nand therefore should be avoided.\n\nIf you want to allow scalar iteration, use `allowscalar` or `@allowscalar`\nto enable scalar iteration globally or for the operations in question."
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "bilinear",
+      "mode": "hvp",
+      "max_rel_err": null,
+      "errmsg": "adjoint mode didn't produce usable initstacks (see its own :adjoint result)"
+    }
+  ]
+}
