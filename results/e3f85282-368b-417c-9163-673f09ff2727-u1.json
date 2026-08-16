@@ -1,0 +1,52 @@
+{
+  "results": [
+    {
+      "backend": "cuda",
+      "status": "ok",
+      "kernel": "bilinear",
+      "mode": "tangent",
+      "max_rel_err": 5.26940426712273e-17,
+      "errmsg": null
+    },
+    {
+      "backend": "cuda",
+      "status": "ok",
+      "kernel": "bilinear",
+      "mode": "adjoint",
+      "max_rel_err": 0.0,
+      "errmsg": null
+    },
+    {
+      "backend": "cuda",
+      "status": "ok",
+      "kernel": "bilinear",
+      "mode": "hvp",
+      "max_rel_err": 0.0,
+      "errmsg": null
+    },
+    {
+      "backend": "jacc",
+      "status": "ok",
+      "kernel": "bilinear",
+      "mode": "tangent",
+      "max_rel_err": 7.120442199566184e-17,
+      "errmsg": null
+    },
+    {
+      "backend": "jacc",
+      "status": "ok",
+      "kernel": "bilinear",
+      "mode": "adjoint",
+      "max_rel_err": 0.0,
+      "errmsg": null
+    },
+    {
+      "backend": "jacc",
+      "status": "ok",
+      "kernel": "bilinear",
+      "mode": "hvp",
+      "max_rel_err": 0.0,
+      "errmsg": null
+    }
+  ]
+}
