@@ -1,0 +1,88 @@
+{
+  "results": [
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "matvec_loss",
+      "mode": "tangent",
+      "max_rel_err": null
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "matvec_loss",
+      "mode": "adjoint",
+      "max_rel_err": null
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "matvec_loss",
+      "mode": "hvp",
+      "max_rel_err": null
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "matvec_loss",
+      "mode": "tangent",
+      "max_rel_err": null
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "matvec_loss",
+      "mode": "adjoint",
+      "max_rel_err": null
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "matvec_loss",
+      "mode": "hvp",
+      "max_rel_err": null
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "ttgc",
+      "mode": "tangent",
+      "max_rel_err": null
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "ttgc",
+      "mode": "adjoint",
+      "max_rel_err": null
+    },
+    {
+      "backend": "cuda",
+      "status": "run_error",
+      "kernel": "ttgc",
+      "mode": "hvp",
+      "max_rel_err": null
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "ttgc",
+      "mode": "tangent",
+      "max_rel_err": null
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "ttgc",
+      "mode": "adjoint",
+      "max_rel_err": null
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "ttgc",
+      "mode": "hvp",
+      "max_rel_err": null
+    }
+  ]
+}
