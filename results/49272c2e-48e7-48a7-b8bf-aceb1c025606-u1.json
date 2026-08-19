@@ -1,0 +1,28 @@
+{
+  "results": [
+    {
+      "backend": "jacc",
+      "status": "ok",
+      "kernel": "affine_loss",
+      "mode": "tangent",
+      "max_rel_err": 0.0,
+      "errmsg": null
+    },
+    {
+      "backend": "jacc",
+      "status": "ok",
+      "kernel": "affine_loss",
+      "mode": "adjoint",
+      "max_rel_err": 0.0,
+      "errmsg": null
+    },
+    {
+      "backend": "jacc",
+      "status": "ok",
+      "kernel": "affine_loss",
+      "mode": "hvp",
+      "max_rel_err": 0.0,
+      "errmsg": null
+    }
+  ]
+}
