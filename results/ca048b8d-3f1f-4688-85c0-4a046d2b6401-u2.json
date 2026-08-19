@@ -1,0 +1,7 @@
+{
+  "engine": "jacc",
+  "n": 1000000,
+  "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb",
+  "status": "JACC.jl kernel executed successfully",
+  "result": 55.0
+}
