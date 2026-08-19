@@ -1,0 +1,28 @@
+{
+  "results": [
+    {
+      "backend": "jacc",
+      "status": "ok",
+      "kernel": "affine_loss",
+      "mode": "tangent",
+      "max_rel_err": 0.0,
+      "errmsg": null
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "affine_loss",
+      "mode": "adjoint",
+      "max_rel_err": null,
+      "errmsg": "GPUCompiler.InvalidIRError(GPUCompiler.CompilerJob{GPUCompiler.PTXCompilerTarget, CUDACore.CUDACompilerParams}(MethodInstance for CUDAExt._parallel_for_cuda(::Int64, ::typeof(jacc_kernel_affine_loss_b_2!), ::CUDACore.CuDeviceVector{Float64, 1}, ::CUDACore.CuDeviceVector{Float64, 1}), GPUCompiler.CompilerConfig{GPUCompiler.PTXCompilerTarget, CUDACore.CUDACompilerParams}(GPUCompiler.PTXCompilerTarget(v\"12.0.0\", v\"8.8.0\", :arch, true, nothing, nothing, nothing, nothing, false, nothing, nothing), CUDACore.CUDACompilerParams(CUDACore.SMVersion(12, 0, :arch), v\"8.8.0\"), true, nothing, :specfunc, false, 2, 1, true, true, true, true, false, true, false), 0x0000000000006b86), Tuple{String, Vector{Base.StackTraces.StackFrame}, Any}[(\"dynamic function invocation\", [modify! at AtomixCUDAExt.jl:34, jacc_kernel_affine_loss_b_2! at affine_loss_b_jacc.jl:15, _parallel_for_cuda at CUDAExt.jl:369], convert)])"
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "affine_loss",
+      "mode": "hvp",
+      "max_rel_err": null,
+      "errmsg": "adjoint mode didn't produce usable initstacks (see its own :adjoint result)"
+    }
+  ]
+}
