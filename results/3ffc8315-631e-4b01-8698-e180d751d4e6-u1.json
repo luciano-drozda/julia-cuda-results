@@ -1,0 +1,28 @@
+{
+  "results": [
+    {
+      "backend": "jacc",
+      "status": "ok",
+      "kernel": "affine_loss",
+      "mode": "tangent",
+      "max_rel_err": 0.0,
+      "errmsg": null
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "affine_loss",
+      "mode": "adjoint",
+      "max_rel_err": null,
+      "errmsg": "CuArray only supports element types that are allocated inline.\nCUDACore.CuArray{Float64, 1, CUDACore.DeviceMemory} is a mutable type\n"
+    },
+    {
+      "backend": "jacc",
+      "status": "run_error",
+      "kernel": "affine_loss",
+      "mode": "hvp",
+      "max_rel_err": null,
+      "errmsg": "adjoint mode didn't produce usable initstacks (see its own :adjoint result)"
+    }
+  ]
+}
