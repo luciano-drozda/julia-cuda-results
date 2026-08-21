@@ -1,0 +1,23 @@
+{
+  "geomrecur/fused": {
+    "max_rel_err": 0.0,
+    "bad": []
+  },
+  "relu_field/fused": {
+    "max_rel_err": 0.0,
+    "bad": []
+  },
+  "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb",
+  "cascadic_mg_prolong/fused": {
+    "max_rel_err": 0.0,
+    "bad": []
+  },
+  "advection/fused": {
+    "max_rel_err": 0.0,
+    "bad": []
+  },
+  "advection_multi/fused": {
+    "max_rel_err": 0.0,
+    "bad": []
+  }
+}
