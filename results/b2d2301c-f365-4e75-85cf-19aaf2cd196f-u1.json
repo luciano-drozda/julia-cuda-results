@@ -1,0 +1,67 @@
+{
+  "affine_loss/fused": {
+    "max_rel_err": 0.0,
+    "bad": []
+  },
+  "bilinear/fused": {
+    "max_rel_err": 1.1102230246251565e-16,
+    "bad": []
+  },
+  "advection/fused": {
+    "max_rel_err": 2.505607860962801e-16,
+    "bad": []
+  },
+  "cond_loop_choice/fused": {
+    "max_rel_err": 0.0,
+    "bad": []
+  },
+  "stencil_loss/fused": {
+    "max_rel_err": 0.0,
+    "bad": []
+  },
+  "relu_field/fused": {
+    "max_rel_err": 0.0,
+    "bad": []
+  },
+  "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb",
+  "two_field_loss/fused": {
+    "max_rel_err": 0.0,
+    "bad": []
+  },
+  "matvec_loss/fused": {
+    "max_rel_err": 0.0,
+    "bad": []
+  },
+  "sumsq_shifted/fused": {
+    "max_rel_err": 0.0,
+    "bad": []
+  },
+  "pipeline/fused": {
+    "max_rel_err": 0.0,
+    "bad": []
+  },
+  "geomrecur/fused": {
+    "max_rel_err": 0.0,
+    "bad": []
+  },
+  "dotprod/fused": {
+    "max_rel_err": 0.0,
+    "bad": []
+  },
+  "weightedsumsq/fused": {
+    "max_rel_err": 0.0,
+    "bad": []
+  },
+  "normcomp/fused": {
+    "max_rel_err": 0.0,
+    "bad": []
+  },
+  "cond_field_choice/fused": {
+    "max_rel_err": 0.0,
+    "bad": []
+  },
+  "advection_multi/fused": {
+    "max_rel_err": 5.551115123125783e-17,
+    "bad": []
+  }
+}
