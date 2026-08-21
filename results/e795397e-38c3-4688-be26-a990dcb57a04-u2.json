@@ -1,0 +1,25 @@
+{
+  "relu_field/plain": {
+    "max_rel_err": 0.0,
+    "bad": []
+  },
+  "mpnn/plain": {
+    "error": "UndefVarError: `s` not defined in local scope"
+  },
+  "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb",
+  "cascadic_mg_prolong/plain": {
+    "error": "ArgumentError: invalid index: 30.0 of type Float64"
+  },
+  "advection/plain": {
+    "error": "Scalar indexing is disallowed."
+  },
+  "advection_multi/plain": {
+    "error": "Scalar indexing is disallowed."
+  },
+  "geomrecur/plain": {
+    "error": "Scalar indexing is disallowed."
+  },
+  "ttgc/plain": {
+    "error": "UndefVarError: `resib` not defined in local scope"
+  }
+}
