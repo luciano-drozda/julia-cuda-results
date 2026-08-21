@@ -1,0 +1,9 @@
+{
+  "cpu": {
+    "error": "ArgumentError: invalid GenericMemory size: too large for system address width"
+  },
+  "gpu": {
+    "error": "InexactError: convert(UInt64, -48)"
+  },
+  "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb"
+}
