@@ -1,0 +1,19 @@
+{
+  "geomrecur/fused": {
+    "error": "BoundsError: attempt to access 0-element Vector{Float64} at index [1]"
+  },
+  "relu_field/fused": {
+    "error": "BoundsError: attempt to access 0-element Vector{Int64} at index [1]"
+  },
+  "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb",
+  "cascadic_mg_prolong/fused": {
+    "max_rel_err": 0.0,
+    "bad": []
+  },
+  "advection/fused": {
+    "error": "BoundsError: attempt to access 0-element Vector{Float64} at index [1]"
+  },
+  "advection_multi/fused": {
+    "error": "BoundsError: attempt to access 0-element Vector{Float64} at index [1]"
+  }
+}
