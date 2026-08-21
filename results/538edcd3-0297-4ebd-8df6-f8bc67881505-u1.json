@@ -1,0 +1,4 @@
+{
+  "error": "could not parse kernel stdout as JSON",
+  "raw_stdout": "ERROR: a undefined variable error was thrown during kernel execution on thread (33, 1, 1) in block (1, 1, 1).\nStacktrace not available, run Julia on debug level 2 for more details (by passing -g2 to the executable).\n\n{\"device\":\"NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb\",\"unet/fused\":{\"error\":\"KernelException: exception thrown during kernel execution on device NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb\"}}"
+}
