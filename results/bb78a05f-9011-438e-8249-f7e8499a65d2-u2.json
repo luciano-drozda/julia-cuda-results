@@ -1,0 +1,11 @@
+{
+  "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb",
+  "dotprod/fused": {
+    "max_rel_err": 0.0,
+    "bad": []
+  },
+  "sumsq_shifted/fused": {
+    "max_rel_err": 0.0,
+    "bad": []
+  }
+}
