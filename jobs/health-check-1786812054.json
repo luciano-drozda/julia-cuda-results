@@ -1,8 +1,0 @@
-{
-  "input": {
-    "a": [1, 2, 3],
-    "b": [10, 20, 30],
-    "engine": "cuda",
-    "_script": "import JSON3, CUDA\nargs = JSON3.read(ARGS[1], Dict)\na = CUDA.CuArray(args[\"a\"])\nb = CUDA.CuArray(args[\"b\"])\nc = a .+ b\nresult = Array(c)\nJSON3.write(stdout, Dict(\"result\" => result))"
-  }
-}

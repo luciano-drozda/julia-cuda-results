@@ -1,8 +1,0 @@
-{
-  "input": {
-    "a": [1,2,3,4],
-    "b": [10,20,30,40],
-    "engine": "cuda",
-    "_script": "using CUDA\nimport JACC\nJACC.@init_backend\nusing JSON3\nnames_list = names(JACC, all=true)\nprintln(JSON3.write(Dict(\"jacc_names\" => string.(names_list))))\n"
-  }
-}
