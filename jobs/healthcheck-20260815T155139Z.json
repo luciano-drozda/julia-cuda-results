@@ -1,8 +1,0 @@
-{
-  "input": {
-    "a": [1, 2, 3, 4],
-    "b": [10, 20, 30, 40],
-    "engine": "cuda",
-    "_script": "using CUDA; import JSON3; a = JSON3.read(ARGS[1])[:a]; b = JSON3.read(ARGS[1])[:b]; result = a .+ b; println(JSON3.write((; result, status=\"ok\")))"
-  }
-}
