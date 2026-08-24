@@ -1,0 +1,7 @@
+{
+  "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb",
+  "kernel": "mpnn",
+  "rtol": 1.75e-13,
+  "ok": true,
+  "max_rel_err": 1.8720391269073764e-16
+}
