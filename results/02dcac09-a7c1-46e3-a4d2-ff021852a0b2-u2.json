@@ -1,0 +1,5 @@
+{
+  "error": "julia process exited non-zero",
+  "returncode": 1,
+  "stderr": "Precompiling CUDAExt...\n   3504.4 ms  \u2713 JACC \u2192 CUDAExt\n  1 dependency successfully precompiled in 4 seconds. 125 already precompiled.\n[ Info: CUDA backend loaded\nERROR: LoadError: ArgumentError: Package Atomix not found in current path.\n- Run `import Pkg; Pkg.add(\"Atomix\")` to install the Atomix package.\nStacktrace:\n [1] macro expansion\n   @ ./loading.jl:2296 [inlined]\n [2] macro expansion\n   @ ./lock.jl:273 [inlined]\n [3] __require(into::Module, mod::Symbol)\n   @ Base ./loading.jl:2271\n [4] #invoke_in_world#3\n   @ ./essentials.jl:1089 [inlined]\n [5] invoke_in_world\n   @ ./essentials.jl:1086 [inlined]\n [6] require(into::Module, mod::Symbol)\n   @ Base ./loading.jl:2260\n [7] include(fname::String)\n   @ Main ./sysimg.jl:38\n [8] top-level scope\n   @ /tmp/job_02dcac09-a7c1-46e3-a4d2-ff021852a0b2-u2.jl:67\nin expression starting at /tmp/stade_gpu/validate_corpus_gpu.jl:51\nin expression starting at /tmp/job_02dcac09-a7c1-46e3-a4d2-ff021852a0b2-u2.jl:67\n"
+}
