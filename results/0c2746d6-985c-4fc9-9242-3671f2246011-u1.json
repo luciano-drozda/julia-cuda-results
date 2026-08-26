@@ -1,0 +1,16 @@
+{
+  "elapsed_s": 52.4,
+  "worst_ok": 1.1102230246251565e-16,
+  "ok": [
+    "advection",
+    "advection_multi",
+    "affine_loss",
+    "bilinear",
+    "bnd_branch",
+    "bnd_carried",
+    "bnd_nested_only",
+    "bnd_readfirst"
+  ],
+  "msgs": "",
+  "bad": []
+}
