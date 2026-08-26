@@ -1,0 +1,16 @@
+{
+  "elapsed_s": 47.5,
+  "worst_ok": 1.973265921378254e-16,
+  "ok": [
+    "normcomp",
+    "pipeline",
+    "prefixscan",
+    "quadloss",
+    "raggedii",
+    "raggedind",
+    "red_escape",
+    "relu_field"
+  ],
+  "msgs": "",
+  "bad": []
+}
