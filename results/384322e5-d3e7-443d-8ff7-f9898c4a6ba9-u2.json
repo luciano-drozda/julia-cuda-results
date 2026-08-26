@@ -1,0 +1,5 @@
+{
+  "error": "julia process exited non-zero",
+  "returncode": 1,
+  "stderr": "ERROR: LoadError: MethodError: no method matching Array(::Int64)\nThe type `Array` exists, but no method is defined for this combination of argument types when trying to construct it.\n\nClosest candidates are:\n  Array(!Matched::QRPivoted)\n   @ LinearAlgebra /opt/julia-1.11.9/share/julia/stdlib/v1.11/LinearAlgebra/src/qr.jl:457\n  Array(!Matched::LQ)\n   @ LinearAlgebra /opt/julia-1.11.9/share/julia/stdlib/v1.11/LinearAlgebra/src/lq.jl:125\n  Array(!Matched::Schur)\n   @ LinearAlgebra /opt/julia-1.11.9/share/julia/stdlib/v1.11/LinearAlgebra/src/schur.jl:446\n  ...\n\nStacktrace:\n [1] top-level scope\n   @ /tmp/job_384322e5-d3e7-443d-8ff7-f9898c4a6ba9-u2.jl:193\nin expression starting at /tmp/job_384322e5-d3e7-443d-8ff7-f9898c4a6ba9-u2.jl:172\n"
+}
