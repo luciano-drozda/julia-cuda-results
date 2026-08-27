@@ -1,0 +1,16 @@
+{
+  "elapsed_s": 51.1,
+  "worst_ok": 1.843315026937964e-15,
+  "ok": [
+    "branchsel",
+    "cascadic_mg_prolong",
+    "cellscatter",
+    "clamped_sumsq",
+    "coarsen_retire",
+    "cond_field_choice",
+    "cond_loop_choice",
+    "dotprod"
+  ],
+  "msgs": "",
+  "bad": []
+}
