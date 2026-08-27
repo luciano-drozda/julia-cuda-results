@@ -1,0 +1,17 @@
+{
+  "elapsed_s": 36.9,
+  "worst_ok": 2.1532767408420377e-16,
+  "ok": [
+    "entry_branch",
+    "entry_dead",
+    "entry_empty"
+  ],
+  "msgs": "",
+  "bad": [
+    {
+      "e": 0.9805492573623139,
+      "k": "ii_kill",
+      "s": "FAIL"
+    }
+  ]
+}
