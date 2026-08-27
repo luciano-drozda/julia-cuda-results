@@ -1,0 +1,15 @@
+{
+  "elapsed_s": 77.0,
+  "worst_ok": 1.8807873460110204e-13,
+  "ok": [
+    "cellscatter",
+    "entry_branch",
+    "entry_dead",
+    "entry_empty",
+    "mpnn",
+    "raggedii",
+    "ttgc"
+  ],
+  "msgs": "",
+  "bad": []
+}
