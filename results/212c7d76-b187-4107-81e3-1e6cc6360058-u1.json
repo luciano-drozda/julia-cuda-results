@@ -1,0 +1,16 @@
+{
+  "elapsed_s": 44.5,
+  "worst_ok": 1.4137179669550815e-16,
+  "ok": [
+    "raggedii",
+    "raggedind",
+    "red_escape",
+    "relu_field",
+    "retire_empty",
+    "richardson_substep",
+    "stencil_loss",
+    "sumsq_shifted"
+  ],
+  "msgs": "",
+  "bad": []
+}
