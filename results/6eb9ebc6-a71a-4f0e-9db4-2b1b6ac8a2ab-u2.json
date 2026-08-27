@@ -1,0 +1,11 @@
+{
+  "elapsed_s": 73.3,
+  "worst_ok": 0.0,
+  "ok": [
+    "mg_vcycle",
+    "mg_vcycle_multi",
+    "retire_empty"
+  ],
+  "msgs": "",
+  "bad": []
+}
