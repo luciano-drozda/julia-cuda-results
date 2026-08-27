@@ -1,0 +1,12 @@
+{
+  "elapsed_s": 53.1,
+  "worst_ok": 6.38378239159465e-16,
+  "ok": [
+    "ttgc",
+    "two_field_loss",
+    "weightedsumsq",
+    "windowed_relax_retire"
+  ],
+  "msgs": "",
+  "bad": []
+}
