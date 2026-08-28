@@ -1,7 +1,0 @@
-{
-  "assignments_survive": true,
-  "cuda_version": "12.4.0",
-  "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb",
-  "x_after_block": 11.0,
-  "y_after_block": 22.0
-}

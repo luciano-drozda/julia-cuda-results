@@ -1,5 +1,0 @@
-{
-  "error": "julia process exited non-zero",
-  "returncode": 1,
-  "stderr": "ERROR: LoadError: ParseError:\n# Error @ /tmp/job_a0da65ca-d306-4906-93e1-79ef20d7f74e-u1.jl:18:10\n\nfunction dtb_cpu = ttgc_b(u, ub, uref, urefb, i_cell_to_node, cell_vol, cell_volb, node_vol, node_volb, skx, skxb, sky, skyb, skz, skzb, i_ncell, i_nnode, c, cb, dt, dtb, beta, betab, gamma, gammab, i_njac, res, resb, res2, res2b, up, upb, mup, mupb, loss, lossb, cavgx_stack, cavgy_stack, cavgz_stack, vere_stack, re_stack, aerex_stack, aerey_stack, aerez_stack, aeresk_stack, factor_stack, mup_stack, auxu_stack, up_stack)\n#        \u2514\u2500\u2500\u2500\u2500\u2500\u2518 \u2500\u2500 Invalid signature in function definition\nStacktrace:\n [1] top-level scope\n   @ /tmp/job_a0da65ca-d306-4906-93e1-79ef20d7f74e-u1.jl:18\nin expression starting at /tmp/job_a0da65ca-d306-4906-93e1-79ef20d7f74e-u1.jl:18\n"
-}

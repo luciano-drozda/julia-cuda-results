@@ -1,5 +1,0 @@
-{
-  "kernel": "mg_vcycle",
-  "ok": false,
-  "caught": "LoadError: Grid dimensions CuDim3(0x00000000, 0x00000001, 0x00000001) are not positive\nin expression starting at /tmp/_inner.jl:1504"
-}

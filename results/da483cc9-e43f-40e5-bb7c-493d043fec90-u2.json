@@ -1,7 +1,0 @@
-{
-  "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb",
-  "kernel": "fix1_mg_vcycle_multi",
-  "rtol": 2.5e-14,
-  "ok": true,
-  "max_rel_err": 0.0
-}

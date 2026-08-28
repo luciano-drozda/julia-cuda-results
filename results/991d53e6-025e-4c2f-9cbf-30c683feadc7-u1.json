@@ -1,5 +1,0 @@
-{
-  "error": "julia process exited non-zero",
-  "returncode": 1,
-  "stderr": "ERROR: LoadError: UndefVarError: `vere_stack` not defined in `Main`\nSuggestion: check for spelling errors or missing imports.\nStacktrace:\n [1] main()\n   @ Main /tmp/job_991d53e6-025e-4c2f-9cbf-30c683feadc7-u1.jl:569\n [2] top-level scope\n   @ /tmp/job_991d53e6-025e-4c2f-9cbf-30c683feadc7-u1.jl:573\nin expression starting at /tmp/job_991d53e6-025e-4c2f-9cbf-30c683feadc7-u1.jl:573\n"
-}

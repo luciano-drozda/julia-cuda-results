@@ -1,5 +1,0 @@
-{
-  "error": "julia process exited non-zero",
-  "returncode": 1,
-  "stderr": "ERROR: LoadError: CuArray only supports element types that are allocated inline.\nAny is not allocated inline\n\nStacktrace:\n [1] error(s::String)\n   @ Base ./error.jl:35\n [2] check_eltype\n   @ /opt/julia-depot/packages/CUDACore/NlVPI/src/array.jl:68 [inlined]\n [3] CUDACore.CuArray{Any, 1, CUDACore.DeviceMemory}(::UndefInitializer, dims::Tuple{Int64})\n   @ CUDACore /opt/julia-depot/packages/CUDACore/NlVPI/src/array.jl:83\n [4] CuArray\n   @ /opt/julia-depot/packages/CUDACore/NlVPI/src/array.jl:438 [inlined]\n [5] CuArray\n   @ /opt/julia-depot/packages/CUDACore/NlVPI/src/array.jl:443 [inlined]\n [6] CUDACore.CuArray(A::Vector{Any})\n   @ CUDACore /opt/julia-depot/packages/CUDACore/NlVPI/src/array.jl:452\n [7] top-level scope\n   @ /tmp/job_16b80043-91b3-4062-aad1-860db467beec-u2.jl:3\nin expression starting at /tmp/job_16b80043-91b3-4062-aad1-860db467beec-u2.jl:3\n"
-}

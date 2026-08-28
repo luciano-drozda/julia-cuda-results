@@ -1,5 +1,0 @@
-{
-  "input": {
-    "_script": "println(Sys.CPU_THREADS)"
-  }
-}

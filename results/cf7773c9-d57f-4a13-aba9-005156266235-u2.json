@@ -1,6 +1,0 @@
-{
-  "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb",
-  "unet/fused": {
-    "error": "Scalar indexing is disallowed."
-  }
-}

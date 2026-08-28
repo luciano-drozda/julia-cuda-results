@@ -1,5 +1,0 @@
-{
-  "stacktrace": "\nStacktrace:\n [1] (::var\"#1#3\")()\n   @ Main /tmp/job_2001c0a0-fbd7-4d20-aa05-3844500dc687-u2.jl:17\n [2] (::Base.RedirectStdStream)(thunk::var\"#1#3\", stream::Base.DevNull)\n   @ Base ./stream.jl:1469\n [3] top-level scope\n   @ /tmp/job_2001c0a0-fbd7-4d20-aa05-3844500dc687-u2.jl:9\n [4] include(mod::Module, _path::String)\n   @ Base ./Base.jl:562\n [5] exec_options(opts::Base.JLOptions)\n   @ Base ./client.jl:316\n [6] _start()\n   @ Base ./client.jl:524",
-  "error": "julia_exception",
-  "errmsg": "MethodError: no method matching validate_corpus_gpu(::String; backends::Tuple{Symbol})\nThe applicable method may be too new: running in world age 26699, while current world is 27379.\n\nClosest candidates are:\n  validate_corpus_gpu(::String; backends, keep_push_pop, site_level_tbr, keep_all_atomic, rtol) (method too new to be called from this world context.)\n   @ Main validate_corpus_gpu.jl:247\n  validate_corpus_gpu(; ...) (method too new to be called from this world context.)\n   @ Main validate_corpus_gpu.jl:247\n"
-}

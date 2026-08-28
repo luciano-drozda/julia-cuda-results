@@ -1,5 +1,0 @@
-{
-  "error": "julia process exited non-zero",
-  "returncode": 1,
-  "stderr": "ERROR: LoadError: UndefVarError: `__perarr` not defined in `Main`\nSuggestion: check for spelling errors or missing imports.\nStacktrace:\n [1] top-level scope\n   @ /tmp/job_49f949b0-92f8-43dd-a918-cf4250b48aaa-u1.jl:3361\nin expression starting at /tmp/job_49f949b0-92f8-43dd-a918-cf4250b48aaa-u1.jl:3253\n"
-}

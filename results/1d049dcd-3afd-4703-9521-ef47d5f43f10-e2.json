@@ -1,5 +1,0 @@
-{
-  "error": "julia process exited non-zero",
-  "returncode": 1,
-  "stderr": "\u250c Error: CUDA.jl could not find an appropriate CUDA runtime to use.\n\u2502 \n\u2502 CUDA.jl's JLLs were precompiled without an NVIDIA driver present.\n\u2502 This can happen when installing CUDA.jl on an HPC log-in node,\n\u2502 or in a container. In that case, you need to specify which CUDA\n\u2502 version to use at run time by calling `CUDA.set_runtime_version!`\n\u2502 or provisioning the preference it sets at compile time.\n\u2502 \n\u2502 If you are not running in a container or on an HPC log-in node,\n\u2502 try re-compiling the CUDA runtime JLL and re-loading CUDA.jl:\n\u2502      pkg = Base.PkgId(Base.UUID(\"76a88914-d11a-5bdc-97e0-2f5a05c973a2\"),\n\u2502                       \"CUDA_Runtime_jll\")\n\u2502      Base.compilecache(pkg)\n\u2502      # re-start Julia and re-load CUDA.jl\n\u2502 \n\u2502 For more details, refer to the CUDA.jl documentation at\n\u2502 https://cuda.juliagpu.org/stable/installation/overview/\n\u2514 @ CUDACore /opt/julia-depot/packages/CUDACore/NlVPI/src/initialization.jl:136\n"
-}

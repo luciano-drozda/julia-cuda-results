@@ -1,5 +1,0 @@
-{
-  "error": "julia process exited non-zero",
-  "returncode": 1,
-  "stderr": "[ Info: CUDA backend loaded\nERROR: LoadError: MethodError: no method matching (::Base.RedirectStdStream)(::IOBuffer)\nThe function `Base.RedirectStdStream(1, true)` exists, but no method is defined for this combination of argument types.\n\nClosest candidates are:\n  (::Base.RedirectStdStream)()\n   @ Base stream.jl:1298\n  (::Base.RedirectStdStream)(!Matched::Pipe)\n   @ Base stream.jl:1290\n  (::Base.RedirectStdStream)(!Matched::Base.DevNull)\n   @ Base stream.jl:1275\n  ...\n\nStacktrace:\n [1] (::Base.RedirectStdStream)(thunk::var\"#30#31\", stream::IOBuffer)\n   @ Base ./stream.jl:1467\n [2] top-level scope\n   @ /tmp/job_2aaf7ebb-7555-48b5-8726-b30e569671df-u2.jl:28\nin expression starting at /tmp/job_2aaf7ebb-7555-48b5-8726-b30e569671df-u2.jl:28\n"
-}

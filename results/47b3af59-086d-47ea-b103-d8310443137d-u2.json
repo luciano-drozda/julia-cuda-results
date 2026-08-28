@@ -1,5 +1,0 @@
-{
-  "error": "julia process exited non-zero",
-  "returncode": 1,
-  "stderr": "ERROR: LoadError: syntax: `global max_rel_err`: max_rel_err is a local variable in its enclosing scope\nStacktrace:\n [1] top-level scope\n   @ /tmp/job_47b3af59-086d-47ea-b103-d8310443137d-u2.jl:6\nin expression starting at /tmp/job_47b3af59-086d-47ea-b103-d8310443137d-u2.jl:6\n"
-}
