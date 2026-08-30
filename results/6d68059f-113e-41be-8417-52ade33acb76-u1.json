@@ -1,0 +1,4 @@
+{
+  "error": "could not parse kernel stdout as JSON",
+  "raw_stdout": "mpnn [adjoint/cuda]                    ok  max_rel_err=0.0  changed=274\nmpnn [adjoint/jacc]                    ok  max_rel_err=0.0  changed=274\nmpnn [hvp/cuda]                        ok  max_rel_err=0.0  changed=548\nmpnn [hvp/jacc]                        ok  max_rel_err=0.0  changed=548\n\n4/4 checks passed"
+}
