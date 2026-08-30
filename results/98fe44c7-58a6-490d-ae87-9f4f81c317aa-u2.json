@@ -1,0 +1,5 @@
+{
+  "error": "julia process exited non-zero",
+  "returncode": 1,
+  "stderr": "[ Info: CUDA backend loaded\nERROR: LoadError: IOError: readdir(\"val-corpus\"): no such file or directory (ENOENT)\nStacktrace:\n [1] uv_error\n   @ ./libuv.jl:106 [inlined]\n [2] _readdir(dir::String; return_objects::Bool, join::Bool, sort::Bool)\n   @ Base.Filesystem ./file.jl:995\n [3] _readdir\n   @ ./file.jl:988 [inlined]\n [4] readdir\n   @ ./file.jl:917 [inlined]\n [5] validate_corpus_gpu(dir::String; trials::Int64, fuse_ii_loops::Bool, run_cuda::Bool, run_jacc::Bool, write_generated::Bool, modes::Vector{Symbol}, only::Nothing)\n   @ Main /tmp/job_98fe44c7-58a6-490d-ae87-9f4f81c317aa-u2.jl:9010\n [6] validate_corpus_gpu\n   @ /tmp/job_98fe44c7-58a6-490d-ae87-9f4f81c317aa-u2.jl:9004 [inlined]\n [7] validate_corpus_gpu()\n   @ Main /tmp/job_98fe44c7-58a6-490d-ae87-9f4f81c317aa-u2.jl:9004\n [8] top-level scope\n   @ /tmp/job_98fe44c7-58a6-490d-ae87-9f4f81c317aa-u2.jl:9133\nin expression starting at /tmp/job_98fe44c7-58a6-490d-ae87-9f4f81c317aa-u2.jl:9133\n"
+}
