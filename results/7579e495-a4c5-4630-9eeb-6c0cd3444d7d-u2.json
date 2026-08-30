@@ -1,0 +1,8 @@
+{
+  "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb",
+  "ok": true,
+  "mode": "hvp",
+  "stacks_compared": 0,
+  "max_rel_err": 0.0,
+  "stack_max_rel_err": 0.0
+}
