@@ -1,0 +1,4 @@
+{
+  "error": "could not parse kernel stdout as JSON",
+  "raw_stdout": "mg_vcycle_multi [hvp/cuda]             ok  max_rel_err=0.0  changed=16\nmg_vcycle_multi [hvp/jacc]             ok  max_rel_err=0.0  changed=16\n\n2/2 checks passed"
+}
