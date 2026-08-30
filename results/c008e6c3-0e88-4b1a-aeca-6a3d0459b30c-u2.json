@@ -1,0 +1,4 @@
+{
+  "error": "could not parse kernel stdout as JSON",
+  "raw_stdout": "!! mg_vcycle [hvp/cuda] MethodError: objects of type Float64 are not callable\nmg_vcycle [adjoint/cuda]               ok  max_rel_err=0.0  changed=8\nmg_vcycle [adjoint/jacc]               ok  max_rel_err=0.0  changed=8\nmg_vcycle [hvp/cuda]                   gen_error  changed=0\nmg_vcycle [hvp/jacc]                   ok  max_rel_err=0.0  changed=16\n\n3/4 checks passed   *** 1 NOT OK ***"
+}
