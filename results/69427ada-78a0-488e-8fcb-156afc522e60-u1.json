@@ -1,0 +1,5 @@
+{
+  "args25": "ok",
+  "range0": "FAIL: DivideError: integer division error",
+  "range4": "ok sum=8.0"
+}
