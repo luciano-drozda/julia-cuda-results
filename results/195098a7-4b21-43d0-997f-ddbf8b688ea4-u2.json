@@ -1,0 +1,4 @@
+{
+  "error": "could not parse kernel stdout as JSON",
+  "raw_stdout": "ii_readnested [adjoint/cuda]           ok  max_rel_err=0.0  changed=16\nii_readnested [adjoint/jacc]           ok  max_rel_err=0.0  changed=16\nii_readnested [hvp/cuda]               ok  max_rel_err=0.0  changed=32\nii_readnested [hvp/jacc]               ok  max_rel_err=0.0  changed=32\nmatvec_loss [adjoint/cuda]             ok  max_rel_err=0.0  changed=24\nmatvec_loss [adjoint/jacc]             ok  max_rel_err=0.0  changed=24\nmatvec_loss [hvp/cuda]                 ok  max_rel_err=0.0  changed=48\nmatvec_loss [hvp/jacc]                 ok  max_rel_err=0.0  changed=48\nnormcomp [adjoint/cuda]                ok  max_rel_err=0.0  changed=21\nnormcomp [adjoint/jacc]                ok  max_rel_err=0.0  changed=21\nnormcomp [hvp/cuda]                    ok  max_rel_err=0.0  changed=42\nnormcomp [hvp/jacc]                    ok  max_rel_err=0.0  changed=42\n\n12/12 checks passed"
+}
