@@ -1,0 +1,14 @@
+{
+  "frames": [
+    "div @ ./int.jl:295",
+    "div @ ./div.jl:310",
+    "div @ ./div.jl:365",
+    "cld @ ./div.jl:322",
+    "parallel_for @ /opt/julia-depot/packages/JACC/6qLvd/ext/CUDAExt/CUDAExt.jl:67",
+    "#parallel_for#11 @ /opt/julia-depot/packages/JACC/6qLvd/src/JACC.jl:118",
+    "parallel_for @ /opt/julia-depot/packages/JACC/6qLvd/src/JACC.jl:117",
+    "macro expansion @ /opt/julia-depot/packages/JACC/6qLvd/src/macro.jl:28"
+  ],
+  "msg": "DivideError: integer division error",
+  "etype": "DivideError"
+}
