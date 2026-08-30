@@ -1,0 +1,4 @@
+{
+  "error": "could not parse kernel stdout as JSON",
+  "raw_stdout": "pipeline [adjoint/cuda]                ok  max_rel_err=0.0  changed=26\npipeline [adjoint/jacc]                ok  max_rel_err=0.0  changed=26\npipeline [hvp/cuda]                    ok  max_rel_err=0.0  changed=52\npipeline [hvp/jacc]                    ok  max_rel_err=0.0  changed=52\nprefixscan [adjoint/cuda]              ok  max_rel_err=0.0  changed=13\nprefixscan [adjoint/jacc]              ok  max_rel_err=0.0  changed=13\nprefixscan [hvp/cuda]                  ok  max_rel_err=0.0  changed=26\nprefixscan [hvp/jacc]                  ok  max_rel_err=0.0  changed=26\nquadloss [adjoint/cuda]                ok  max_rel_err=0.0  changed=2\nquadloss [adjoint/jacc]                ok  max_rel_err=0.0  changed=2\nquadloss [hvp/cuda]                    ok  max_rel_err=0.0  changed=4\nquadloss [hvp/jacc]                    ok  max_rel_err=0.0  changed=4\n\n12/12 checks passed"
+}
