@@ -1,0 +1,4 @@
+{
+  "error": "could not parse kernel stdout as JSON",
+  "raw_stdout": "two_field_loss [adjoint/cuda]          ok  max_rel_err=0.0  changed=19\ntwo_field_loss [adjoint/jacc]          ok  max_rel_err=0.0  changed=19\ntwo_field_loss [hvp/cuda]              ok  max_rel_err=2.776e-17  changed=38\ntwo_field_loss [hvp/jacc]              ok  max_rel_err=2.776e-17  changed=38\nweightedsumsq [adjoint/cuda]           ok  max_rel_err=0.0  changed=9\nweightedsumsq [adjoint/jacc]           ok  max_rel_err=0.0  changed=9\nweightedsumsq [hvp/cuda]               ok  max_rel_err=0.0  changed=18\nweightedsumsq [hvp/jacc]               ok  max_rel_err=0.0  changed=18\nwindowed_relax_retire [adjoint/cuda]   ok  max_rel_err=0.0  changed=9\nwindowed_relax_retire [adjoint/jacc]   ok  max_rel_err=0.0  changed=9\nwindowed_relax_retire [hvp/cuda]       ok  max_rel_err=0.0  changed=18\nwindowed_relax_retire [hvp/jacc]       ok  max_rel_err=0.0  changed=18\n\n12/12 checks passed"
+}
