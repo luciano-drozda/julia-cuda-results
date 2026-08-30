@@ -1,0 +1,5 @@
+{
+  "error": "julia process exited non-zero",
+  "returncode": 1,
+  "stderr": "[ Info: CUDA backend loaded\nERROR: LoadError: ParseError:\n# Error @ /tmp/job_628a6764-6a20-4496-bc71-6028aefff174-u1.jl:651:1\nelements_changed = 0\n\u250c\u2500\u2500\ntry\nfor __trial in 1:1\n\u22ee\nend\nend\n#\u2500\u2518 \u2500\u2500 try without catch or finally\nStacktrace:\n [1] top-level scope\n   @ /tmp/job_628a6764-6a20-4496-bc71-6028aefff174-u1.jl:853\nin expression starting at /tmp/job_628a6764-6a20-4496-bc71-6028aefff174-u1.jl:853\n"
+}
