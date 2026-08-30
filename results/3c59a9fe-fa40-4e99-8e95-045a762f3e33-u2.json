@@ -1,0 +1,23 @@
+{
+  "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition MIG 1g.24gb",
+  "ok": false,
+  "stack_err": {
+    "upd_scratch_stack": 0.0012710975611300002,
+    "msg_scratch_stack": 0.0013189029187024026
+  },
+  "worst_stack": 0.0013189029187024026,
+  "arg_err": {
+    "node_featbd": 0.0009509855500333841,
+    "messages": 0.001039225090137208,
+    "aggd": 0.00015034441436206783,
+    "w_updb": 0.0013315112097300843,
+    "w_updbd": 0.00026967241902498885,
+    "w_msg": 0.0010000000000000009,
+    "node_feat_outd": 4.922800342676251e-05,
+    "messagesd": 0.0003636007982835098,
+    "node_feat_out": 5.5279837087251014e-05,
+    "agg": 0.00043910173798993496,
+    "node_featb": 0.0015099326069732038
+  },
+  "worst_arg": 0.0015099326069732038
+}
