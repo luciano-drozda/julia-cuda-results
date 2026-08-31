@@ -1,0 +1,4 @@
+{
+  "error": "could not parse kernel stdout as JSON",
+  "raw_stdout": "unet [hvp/cuda]                        ok  max_rel_err=3.197e-13  changed=9234\n\n1/1 checks passed"
+}
