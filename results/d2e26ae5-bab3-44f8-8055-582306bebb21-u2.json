@@ -1,0 +1,4 @@
+{
+  "error": "could not parse kernel stdout as JSON",
+  "raw_stdout": "unet [adjoint/jacc]                    ok  max_rel_err=2.846e-13  changed=16626\n\n1/1 checks passed"
+}
