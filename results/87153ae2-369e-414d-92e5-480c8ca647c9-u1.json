@@ -1,0 +1,4 @@
+{
+  "error": "could not parse kernel stdout as JSON",
+  "raw_stdout": "transformer [hvp/jacc]                 ok  max_rel_err=8.527e-14  changed=5481\n\n1/1 checks passed"
+}
