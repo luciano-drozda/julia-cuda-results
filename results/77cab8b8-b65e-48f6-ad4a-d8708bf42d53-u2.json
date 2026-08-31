@@ -1,0 +1,4 @@
+{
+  "error": "could not parse kernel stdout as JSON",
+  "raw_stdout": "transformer [hvp/cuda]                 FAIL  max_rel_err=2.757e-12  changed=5515\n\n0/1 checks passed   *** 1 NOT OK ***"
+}
